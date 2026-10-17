@@ -62,12 +62,12 @@ BEGIN
 			CASE
 				WHEN UPPER(TRIM(cst_marital_status)) = 'S' THEN 'Single'
 				WHEN UPPER(TRIM(cst_marital_status)) = 'M' THEN 'Married'
-				ELSE 'Unkwown' -- Handling missing data
+				ELSE 'Unknown' -- Handling missing data
 			END cst_marital_status, 
 			CASE
 				WHEN UPPER(TRIM(cst_gndr)) = 'F' THEN 'Female'
 				WHEN UPPER(TRIM(cst_gndr)) = 'M' THEN 'Male'
-				ELSE 'Unkwown' -- Hnadling missing data
+				ELSE 'Unknown' -- Hnadling missing data
 			END cst_gndr,
 			cst_create_date 
 		FROM
@@ -119,7 +119,7 @@ BEGIN
 				WHEN 'R' THEN 'Road'
 				WHEN 'S' THEN 'Other Sales'
 				WHEN 'T' THEN 'Touring'
-				ELSE 'Unkwown'
+				ELSE 'Unknown'
 			END AS prd_line,
 			-- Changed date type from DATETIME to DATE (prd_start_dt, prd_end_dt)
 			CAST(prd_start_dt AS DATE) prd_start_dt, 
@@ -217,7 +217,7 @@ BEGIN
 			CASE 
 				WHEN UPPER(TRIM(gen)) IN ('F', 'FEMALE') THEN 'Female'
 				WHEN UPPER(TRIM(gen)) IN ('M', 'MALE') THEN 'Male'
- 				ELSE 'Unkown'
+ 				ELSE 'Unknown'
 			END gen
 		FROM bronze.erp_cust_az12 
 		SET @end_time = GETDATE();
@@ -246,7 +246,7 @@ BEGIN
 			CASE
 				WHEN cntry IN ('DE', 'Germany') THEN 'Germany'
 				WHEN cntry IN ('USA', 'US', 'United States') THEN 'United States'
-				WHEN TRIM(cntry) IS NULL OR cntry = '' THEN 'Unkown'
+				WHEN TRIM(cntry) IS NULL OR cntry = '' THEN 'Unknown'
 				ELSE cntry 
 			END AS cntry 
 		FROM bronze.erp_loc_a101 
