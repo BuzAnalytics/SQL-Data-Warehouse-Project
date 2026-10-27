@@ -47,7 +47,6 @@ In this project, you:
 
 ## 🛠️ Important Links & Tools
 
-- **SQL Server and SSMS:** the setup guide in `00_setup` has the links and every step.
 - **[Git](https://github.com/):** a GitHub account, to save and share your project.
 - **[draw.io](https://www.drawio.com/):** to draw the architecture and the data model.
 - **[Notion template](https://www.notion.com/templates/sql-data-warehohhuse-project):** the project plan, ready to copy.
