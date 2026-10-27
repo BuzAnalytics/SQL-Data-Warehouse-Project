@@ -3,9 +3,6 @@
 The materials of the data warehouse project: the source files, every script from the videos, and the docs.
 
 You take raw files from two systems, a CRM and an ERP, and build one data warehouse in SQL Server. At the end, the data is clean and ready for analysis.
-
-**New here? Open the setup guide in the `00_setup` folder.** It walks you through installing SQL Server and creating the database, on Windows and Mac, with the fixes for the common errors.
-
 ```
 sql-data-warehouse-project/
 ├── datasets/            the six source files the project loads
