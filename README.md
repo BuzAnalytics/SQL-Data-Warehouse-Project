@@ -21,8 +21,7 @@ sql-data-warehouse-project/
 │   ├── bronze_to_silver/   six script files to get the silver architecture
 │   └── gold/               three script files to create gold view architecture
 ```
-
-The project reads the six files from `C:\sql\dwh_project\01_datasets\`. Put the folder there, or change the six paths in `03_scripts/bronze/proc_load_bronze.sql`. The videos show the folders without numbers: `datasets` there is `01_datasets` here, `scripts` is `03_scripts`.
+ 
 
 ---
 ## 🏗️ Data Architecture
