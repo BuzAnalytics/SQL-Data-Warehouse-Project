@@ -1,10 +1,4 @@
-# SQL-Data-Warehouse-Project
-
-There will be more description that will be added later.
-A modern SQL data warehouse project with SQL server showing ETL processes, Data modelling, and Analytics.
-
-# Data Warehouse and Analytics Project
- 
+# SQL-Data-Warehouse-And-Analytics-Project
 
 The materials of the data warehouse project: the source files, every script from the videos, and the docs.
 
